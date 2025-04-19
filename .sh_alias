@@ -1,0 +1,33 @@
+dotfiles_dir=~/repos/dotfiles-linux
+
+### Linux command
+alias rm="rm -i"
+alias ll="ls -alh"
+
+# reload zsh config
+alias reload="source ~/.zshrc"
+
+# python3
+alias pip="pip3"
+alias python="python3"
+# python3 pip update
+alias pyupdate="python3 $dotfiles_dir/scripts/pip-update.py"
+
+# git last push
+alias lastpush="bash $dotfiles_dir/scripts/last-push.sh"
+
+alias repos="code ~/repos"
+alias totex="code ~/tex"
+##########################
+### shortcut key
+# lazygit
+alias lg="lazygit"
+# fastfetch
+alias ff="fastfetch"
+
+##########################
+# Coding
+alias coding="code ~/coding"
+# cd rust
+alias cdrust="code ~/coding/rust-learn"
+##########################

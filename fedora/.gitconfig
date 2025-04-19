@@ -1,0 +1,14 @@
+[user]
+	email = fedora@email.com
+	name = Git
+
+[pull]
+    rebase = true
+
+[core]
+	editor = nvim
+
+# Use Proxy
+[url "https://ghfast.top/https://github.com/"]
+    insteadOf = https://github.com/
+
