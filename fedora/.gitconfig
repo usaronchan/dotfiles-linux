@@ -1,6 +1,6 @@
 [user]
-	email = fedora@email.com
-	name = Git
+	email = coding@email.com
+	name = fedora
 
 [pull]
     rebase = true
