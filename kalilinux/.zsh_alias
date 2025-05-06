@@ -1,0 +1,7 @@
+alias reload='source ~/.zshrc'
+
+alias ff='fastfetch'
+alias lg='lazygit'
+
+alias update='sudo apt autoremove -y && sudo apt update -y && sudo apt full-upgrade -y'
+
