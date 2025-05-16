@@ -1,7 +1,7 @@
 ## Setup
 
 - To test connect Internet
-  - run `bash setup/ping_test.sh`
+  - run `bash setup/ping-test.sh`
 - Download and install git package
 - Setup git config and git clone dotfiles via HTTPS
   - See `setup/git.sh`
@@ -18,3 +18,9 @@
 - Change git repos remote url
   - HTTPS -> SSH
 
+### Others
+
+- Install TeXLive
+  - See `setup/texlive-install.sh`
+- Update TeXLive packages
+  - See `setup/texlive-update.sh`
