@@ -39,6 +39,8 @@ gui_install()
 {
   # kitty terminal
   yes | sudo pacman -S kitty && kitty --version
+  # firefox
+  sudo pacman -S firefox
 }
 
 more_install()
