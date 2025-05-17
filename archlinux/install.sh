@@ -12,6 +12,8 @@ base_install()
   yes | sudo pacman -S podman podman-compose
   podman version && podman-compose --version
   ##############################################
+  # curl, wget
+  yes | sudo pacman -S curl wget
   # mupdf
   sudo pacman -S mupdf
   # mutool
