@@ -21,6 +21,6 @@
 ### Others
 
 - Install TeXLive
-  - See `setup/texlive-install.sh`
+  - See `texlive/install.sh`
 - Update TeXLive packages
-  - See `setup/texlive-update.sh`
+  - See `texlive/update.sh`
