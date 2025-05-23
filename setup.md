@@ -20,6 +20,8 @@
 
 ### Others
 
+- Download VSCode
+  - See `setup/vscode.sh`
 - Install TeXLive
   - See `texlive/install.sh`
 - Update TeXLive packages
