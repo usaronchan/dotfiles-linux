@@ -7,14 +7,16 @@ sudo journalctl --vacuum-time=5d
 sudo journalctl --vacuum-size=50M
 
 # 清理软件包缓存
-yes | sudo pacman -Scc
+sudo pacman -Scc --noconfirm
 
 # paccache脚本默认情况下会删除已安装和未安装包的所有缓存版本，但最近 3 个版本除外
 # yes | sudo pacman -S pacman-contrib
 paccache -r
 
 # Use yay to clean
-yes | yay -Scc
+yay -Scc --noconfirm
+
+
 
 
 # 释放Docker内存空间
@@ -23,6 +25,8 @@ yes | yay -Scc
 # 删除所有未被任何容器使用的卷
 # docker volume prune -f
 
-
-
+# 删除所有容器
+# podman rm -a
+# 删除所有镜像
+# podman rmi -a
 

@@ -1,11 +1,9 @@
 .DEFAULT_GOAL := all
-.PHONY: all zsh-theme sync
+.PHONY: all sync
 
-all: zsh-theme
+all: sync
 
-
-zsh-theme:
-	bash ./scripts/zsh-theme.sh
 
 sync:
 	bash base_sync.sh
+
