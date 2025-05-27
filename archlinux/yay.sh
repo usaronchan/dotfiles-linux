@@ -28,7 +28,7 @@ yay -R <package>
 yay -Rs <package>
 
 
-# 查询AUR仓库上安装的软件列表
+# 仅查询AUR或pkgbuild上安装的软件列表
 yay -Qm
 
 

@@ -3,35 +3,35 @@ input=$1
 base_install()
 {
   # pacman-contrib, fastfetch, neovim, lazygit, cron, tmux, Typst, aria2, less, ranger, yazi (替代 ranger), Tree
-  yes | sudo pacman -S pacman-contrib fastfetch neovim lazygit cronie tmux typst aria2 less ranger yazi tree
+  sudo pacman -S --noconfirm pacman-contrib fastfetch neovim lazygit cronie tmux typst aria2 less ranger yazi tree
   fastfetch -v && nvim -v && lazygit -v && crontab -V && tmux -V && typst -V && aria2c --version && less --version && ranger --version && yazi --version && tree --version
   ############### Docker, Podman ###############
   # docker, docker-buildx, docker-compose
-  yes | sudo pacman -S docker docker-buildx docker-compose
+  sudo pacman -S --noconfirm docker docker-buildx docker-compose
   docker --version && docker buildx version && docker-compose version
-  yes | sudo pacman -S podman podman-compose
+  sudo pacman -S --noconfirm podman podman-compose
   podman version && podman-compose --version
   ##############################################
   # curl, wget
-  yes | sudo pacman -S curl wget
+  sudo pacman -S --noconfirm curl wget
   # mupdf
   sudo pacman -S mupdf
   # mutool
-  yes | sudo pacman -S mupdf-tools
+  sudo pacman -S --noconfirm mupdf-tools
   # htop
-  yes | sudo pacman -S htop
+  sudo pacman -S --noconfirm htop
   # tar, 7z, zip, unzip
-  yes | sudo pacman -S tar p7zip zip unzip
+  sudo pacman -S --noconfirm tar p7zip zip unzip
   # mysql
   sudo pacman -S mysql
   # fish
-  yes | sudo pacman -S fish && fish --version
+  sudo pacman -S --noconfirm fish && fish --version
   # github cli
-  yes | sudo pacman -S github-cli && gh --version
+  sudo pacman -S --noconfirm github-cli && gh --version
   # dhcpcd
-  yes | sudo pacman -S dhcpcd
+  sudo pacman -S --noconfirm dhcpcd
   # man
-  yes | sudo pacman -S man-db && sudo mandb
+  sudo pacman -S --noconfirm man-db && sudo mandb
 }
 
 # 不要折腾各种CLI工具和沉迷于配置这些工具，Linux系统是给你学习编程的，而不是用于娱乐的
@@ -40,7 +40,7 @@ base_install()
 gui_install()
 {
   # kitty terminal
-  yes | sudo pacman -S kitty && kitty --version
+  sudo pacman -S --noconfirm kitty && kitty --version
   # firefox
   sudo pacman -S firefox
 }
@@ -48,31 +48,31 @@ gui_install()
 more_install()
 {
   # ffmpeg
-  yes | sudo pacman -S ffmpeg
+  sudo pacman -S --noconfirm ffmpeg
   # Hugo
-  yes | sudo pacman -S hugo && hugo version
+  sudo pacman -S --noconfirm hugo && hugo version
   # w3m
-  yes | sudo pacman -S w3m && w3m -version
+  sudo pacman -S --noconfirm w3m && w3m -version
   # pass
-  yes | sudo pacman -S pass && pass version
+  sudo pacman -S --noconfirm pass && pass version
   # micro
-  yes | sudo pacman -S micro && micro -version
+  sudo pacman -S --noconfirm micro && micro -version
   # mpv
-  yes | sudo pacman -S mpv && mpv --version
+  sudo pacman -S --noconfirm mpv && mpv --version
   # v2ray
-  yes | sudo pacman -S v2ray && v2ray version
+  sudo pacman -S --noconfirm v2ray && v2ray version
   # check pdf
-  yes | sudo pacman -S poppler qpdf
+  sudo pacman -S --noconfirm poppler qpdf
   # pandoc
-  yes | sudo pacman -S pandoc && pandoc --version
+  sudo pacman -S --noconfirm pandoc && pandoc --version
   # deno
-  yes | sudo pacman -S deno && deno --version
+  sudo pacman -S --noconfirm deno && deno --version
   # rsync
-  yes | sudo pacman -S rsync && rsync --version
+  sudo pacman -S --noconfirm rsync && rsync --version
   # fd
-  yes | sudo pacman -S fd && fd --version
+  sudo pacman -S --noconfirm fd && fd --version
   # pyright, rust-analyzer
-  yes | sudo pacman -S pyright rust-analyzer
+  sudo pacman -S --noconfirm pyright rust-analyzer
   pyright --version
 }
 
@@ -87,18 +87,18 @@ coding_install()
 {
   ######################### Coding #########################
   # C/C++
-  yes | sudo pacman -S gcc gdb clang make cmake
+  sudo pacman -S --noconfirm gcc gdb clang make cmake
   gcc --version && gdb -v && clang --version && make -v && cmake --version
-  yes | sudo pacman -S llvm clang lldb
+  sudo pacman -S --noconfirm llvm clang lldb
   clang --version && lldb --version
   # Java, Go
-  yes | sudo pacman -S jdk-openjdk go
+  sudo pacman -S --noconfirm jdk-openjdk go
   java --version && javac -version && go version
   # JavaScript (Node.js npm), Typescript
-  yes | sudo pacman -S nodejs npm typescript
+  sudo pacman -S --noconfirm nodejs npm typescript
   node -v && npm -v && tsc -v
   # Lua, Perl, Ruby
-  yes | sudo pacman -S lua perl ruby
+  sudo pacman -S --noconfirm lua perl ruby
   lua -v && perl -v && ruby -v
   # Rust
   install_rust
@@ -107,7 +107,7 @@ coding_install()
 
 install_rust()
 {
-  yes | sudo pacman -S curl
+  sudo pacman -S --noconfirm curl
   # Rust: https://www.rust-lang.org/tools/install
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 }

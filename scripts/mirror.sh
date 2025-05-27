@@ -6,11 +6,12 @@ if pacman -Q pacman-contrib &> /dev/null; then
   echo '<pacman-contrib> is already installed.'
   echo 'Now check mirrors list...'
   # 从官方镜像列表中获取中国地区速度最快的9个镜像站点，并写入本机的镜像列表中
-  # curl -s "https://archlinux.org/mirrorlist/?country=CN&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' | rankmirrors -n 9 - > /etc/pacman.d/mirrorlist
-  cp /home/chan/repos/dotfiles-linux/archlinux/mirrorlist.backup /etc/pacman.d/mirrorlist.backup
-  sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.backup
-  sed -i '/^#/d' /etc/pacman.d/mirrorlist.backup
-  rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
+  curl -s "https://archlinux.org/mirrorlist/?country=CN&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' | rankmirrors -n 9 - > /etc/pacman.d/mirrorlist
+  # 以下是本地代替
+  # cp /home/chan/repos/dotfiles-linux/archlinux/mirrorlist.backup /etc/pacman.d/mirrorlist.backup
+  # sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.backup
+  # sed -i '/^#/d' /etc/pacman.d/mirrorlist.backup
+  # rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
   # 列出更新后的本地镜像列表
   echo '##########################################'
   echo '###### Updated Mirror List in China ######'
