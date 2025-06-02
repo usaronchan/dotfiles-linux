@@ -12,7 +12,7 @@ rm -rf install-tl-*
 tlmgr install tex-gyre droid cm-unicode roboto junicode lm qualitype arphic-ttf fandol --repository https://mirrors.aliyun.com/CTAN/systems/texlive/tlnet
 # 字体配置
 # 必须安装fontconfig才能使用fc-cache
-yes | sudo pacman -S fontconfig
+sudo pacman -S --noconfirm fontconfig
 mkdir -p ~/.fonts.conf.d
 cp ~/texlive/2025/texmf-var/fonts/conf/texlive-fontconfig.conf ~/.fonts.conf.d/09-texlive.conf
 
