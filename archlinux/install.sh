@@ -5,19 +5,12 @@ base_install()
   # pacman-contrib, fastfetch, neovim, lazygit, cron, tmux, Typst, aria2, less, ranger, yazi (替代 ranger), Tree
   sudo pacman -S --noconfirm pacman-contrib fastfetch neovim lazygit cronie tmux typst aria2 less ranger yazi tree
   fastfetch -v && nvim -v && lazygit -v && crontab -V && tmux -V && typst -V && aria2c --version && less --version && ranger --version && yazi --version && tree --version
-  ############### Docker, Podman ###############
-  # docker, docker-buildx, docker-compose
-  sudo pacman -S --noconfirm docker docker-buildx docker-compose
-  docker --version && docker buildx version && docker-compose version
+  ############### Podman ###############
   sudo pacman -S --noconfirm podman podman-compose
   podman version && podman-compose --version
   ##############################################
   # curl, wget
   sudo pacman -S --noconfirm curl wget
-  # mupdf
-  sudo pacman -S mupdf
-  # mutool
-  sudo pacman -S --noconfirm mupdf-tools
   # htop
   sudo pacman -S --noconfirm htop
   # tar, 7z, zip, unzip
@@ -28,8 +21,6 @@ base_install()
   sudo pacman -S --noconfirm fish && fish --version
   # github cli
   sudo pacman -S --noconfirm github-cli && gh --version
-  # dhcpcd
-  sudo pacman -S --noconfirm dhcpcd
   # man
   sudo pacman -S --noconfirm man-db && sudo mandb
 }
@@ -47,6 +38,15 @@ gui_install()
 
 more_install()
 {
+  ############### Docker ###############
+  sudo pacman -S --noconfirm docker docker-buildx docker-compose
+  docker --version && docker buildx version && docker-compose version
+  # mupdf
+  sudo pacman -S mupdf
+  # mutool
+  sudo pacman -S --noconfirm mupdf-tools
+  # dhcpcd
+  sudo pacman -S --noconfirm dhcpcd
   # ffmpeg
   sudo pacman -S --noconfirm ffmpeg
   # Hugo
