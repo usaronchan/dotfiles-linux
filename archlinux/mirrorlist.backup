@@ -1,0 +1,42 @@
+##
+## Arch Linux repository mirrorlist
+## Filtered by mirror score from mirror status page
+## Generated on 2025-05-23
+##
+
+## China
+#Server = https://mirror.nyist.edu.cn/archlinux/$repo/os/$arch
+## China
+#Server = https://mirrors.wsyu.edu.cn/archlinux/$repo/os/$arch
+## China
+#Server = https://mirrors.qlu.edu.cn/archlinux/$repo/os/$arch
+## China
+#Server = https://mirrors.bfsu.edu.cn/archlinux/$repo/os/$arch
+## China
+#Server = https://mirrors.hust.edu.cn/archlinux/$repo/os/$arch
+## China
+#Server = https://mirrors.nju.edu.cn/archlinux/$repo/os/$arch
+## China
+#Server = https://mirrors.cqu.edu.cn/archlinux/$repo/os/$arch
+## China
+#Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+## China
+#Server = https://mirrors.xjtu.edu.cn/archlinux/$repo/os/$arch
+## China
+#Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
+## China
+#Server = https://mirrors.sjtug.sjtu.edu.cn/archlinux/$repo/os/$arch
+## China
+#Server = https://mirrors.neusoft.edu.cn/archlinux/$repo/os/$arch
+## China
+#Server = https://mirrors.shanghaitech.edu.cn/archlinux/$repo/os/$arch
+## China
+#Server = https://mirrors.hit.edu.cn/archlinux/$repo/os/$arch
+## China
+#Server = https://mirrors.jcut.edu.cn/archlinux/$repo/os/$arch
+## China
+#Server = https://mirrors.aliyun.com/archlinux/$repo/os/$arch
+## China
+#Server = https://mirrors.jxust.edu.cn/archlinux/$repo/os/$arch
+## China
+#Server = https://mirrors.jlu.edu.cn/archlinux/$repo/os/$arch

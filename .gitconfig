@@ -1,0 +1,22 @@
+[user]
+	name = user
+	email = linux@email.com
+
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[log]
+	showSignaTure = false
+
+[core]
+	editor = nvim
+
+[alias]
+	# Displayed the last three commit of logs
+	last-log = log -3 HEAD
+	# Graph of all commit
+	all-log = log --oneline --graph --all
+	# Global configuration
+	gcf = config --global -l
+

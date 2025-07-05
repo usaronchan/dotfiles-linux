@@ -1,0 +1,3 @@
+gui:
+  scrollHeight: 7
+  expandFocusedSidePanel: true

@@ -1,0 +1,57 @@
+[user]
+	# name = Aaron J. Goldberg
+	name = Aaron Chan
+	email = cs.yelling123@passinbox.com
+	# signingKey = CC1CDE93AFCC3274
+[init]
+	defaultBranch = main
+[commit]
+	# gpgSign = true
+	verbose = true
+	# template = ~/.gitmessage
+[log]
+	showSignaTure = false
+[core]
+	# VSCode
+	# editor = code --wait
+	# editor = vim
+	editor = nvim
+[format]
+	pretty = fuller
+# [tag]
+	# gpgSign = true
+[pull]
+	rebase = true
+[push]
+	default = current
+	autoSetupRemote = true
+[grep]
+	lineNumber = true
+
+
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red
+	new = cyan
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[alias]
+	# Displayed the last three commit of logs
+	last-log = log -3 HEAD
+	# Graph of all commit
+	all-log = log --oneline --graph --all
+	# Global configuration
+	gcf = config --global -l
+
